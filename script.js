@@ -63,10 +63,10 @@ function createTodoElement(text, completed) {
     if (completed) li.classList.add('completed');
 
     li.innerHTML = `
-        ${text}
-        <img src="delete.png" alt="delete-icon" class="delete">
         <img src="check.svg" alt="check-icon" class="checkbox">
+        ${text}
         <img src="rename.svg" alt="rename-icon" class="rename">
+        <img src="delete.png" alt="delete-icon" class="delete">
     `;
     todoList.appendChild(li);
 }
